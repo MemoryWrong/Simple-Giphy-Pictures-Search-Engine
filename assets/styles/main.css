@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  margin: 0; }
+
+.page-list {
+  overflow: hidden; }
+
+.middle-text, .main-title, .search-bar .search-area, .page-number, .page-text, .empty-view, .footer .footer-text {
+  text-align: center;
+  font-family: "Adobe Fan Heiti Std"; }
+
+.main-title {
+  margin-top: 100px;
+  color: #111;
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+.search-bar {
+  width: 100%;
+  overflow: hidden;
+  display: flex; }
+  .search-bar .search-area {
+    display: flex;
+    flex-direction: row;
+    color: #999;
+    height: 40px;
+    line-height: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+    .search-bar .search-area .search-input {
+      flex: 1;
+      text-indent: 2%;
+      outline: none;
+      line-height: 35px;
+      font-size: 16px; }
+    .search-bar .search-area .search-btn {
+      background: url("../../assets/images/image_large.svg") no-repeat;
+      background-color: #111;
+      background-position: center center;
+      color: #fff;
+      width: 80px;
+      outline: none; }
+      .search-bar .search-area .search-btn:hover {
+        background-color: #666; }
+
+.page-wrap {
+  display: flex;
+  margin-top: 10px; }
+
+.flex-div {
+  flex: 1; }
+
+.page-input {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 2%;
+  outline: none;
+  line-height: 35px;
+  font-size: 16px;
+  margin-left: 10px; }
+
+.page-text {
+  float: left; }
+
+.results-area {
+  position: absolute;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #9c9c9c;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
+  padding: 10px; }
+  .results-area .image-view {
+    float: left;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background-color: #111; }
+    .results-area .image-view:hover {
+      -webkit-animation: rolling 1.5s;
+      -o-animation: rolling 1.5s;
+      animation: rolling 1.5s; }
+    .results-area .image-view .image-content {
+      width: 80%;
+      margin: 10% 10%; }
+
+.single-image-view {
+  position: absolute;
+  margin-top: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .single-image-view .single-image-text {
+    color: #666;
+    text-align: center;
+    font-family: "Adobe Fan Heiti Std"; }
+  .single-image-view .image-full {
+    border: 10px solid #111;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 110px; }
+
+@keyframes rolling {
+  to {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+.loading-icon {
+  width: 100%;
+  height: 50px;
+  background: url("../../assets/images/load-icon-png-20.png") no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-animation: rollingX 1s infinite;
+  -o-animation: rollingX 1s infinite;
+  animation: rollingX 1s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+@keyframes rollingX {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+.empty-view {
+  margin-top: 50px; }
+  .empty-view .loading-text {
+    font-size: 12px;
+    color: #111; }
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #111; }
+  .footer .footer-text {
+    font-size: 12px;
+    height: 100px;
+    line-height: 100px;
+    color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
