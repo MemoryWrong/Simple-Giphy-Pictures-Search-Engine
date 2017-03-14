@@ -1,15 +1,6 @@
-
-### Submitting your work
-
-When you have completed the assignment, please zip up the entire folder with
-all your changes, and email it to [careers@monkii.com](mailto:careers@monkii.com).
-
-### Framework
-
-You may replace Vue.js with any framework (ie React), but you must update the
-project and build tools yourself. Please do not include refactoring time in the
-4 hours you spend completing the project.
-
+### About Demo
+This demo is a simple image search engine for git search. And
+the API is from Github Giphy.
 
 ### Install project dependencies
 ```
